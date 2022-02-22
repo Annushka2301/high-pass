@@ -1,0 +1,88 @@
+@media (max-width:1150px) {
+  .header {
+    &__social {
+      display: none;
+    }
+    &__btn {
+      display: block;
+    }
+  }
+}
+
+@media (max-width:1024px) {
+  .header {
+
+    &__logo {
+      width: 166px;
+    }
+  }
+
+  .hero {
+
+    &__cont {
+      bottom: 30px;
+      left: 30px;
+    }
+
+    &__title {
+      font-size: 34px;
+    }
+  }
+
+  .about {
+
+    &__form {
+      flex-direction: column;
+    }
+
+    &__img {
+      height: calc(100% - 197px);
+    }
+
+    &__email {
+      max-width: 342px;
+    }
+
+    &__btn {
+      width: 126px;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .proj {
+
+    &__ellipsis {
+      display: inline;
+      white-space: inherit;
+    }
+
+    &__ellips {
+      @include ellipsis;
+      width: 153px;
+    }
+
+    &__descr {
+      margin-bottom: 17px;
+    }
+  }
+
+  .cont {
+    &__map-left {
+      padding: 25px 130px 21px 30px;
+    }
+    &__map-tel {
+      color: $orangeColor;
+      background-image: url(../images/tel-orange.svg);
+    }
+  }
+
+  .footer {
+    &__logo {
+      width: 166px;
+    }
+    &__middle {
+      width: 42%;
+    }
+  }
+}

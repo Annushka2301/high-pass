@@ -1,0 +1,240 @@
+@media (max-width: 600px) {
+  .container {
+    padding: 0 21px;
+  }
+  .hash {
+    font-size: 12px;
+    padding: 4px 14px;
+    right: 5px;
+    top: 5px;
+  }
+  .btn {
+    padding: 7.5px 22px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .header {
+    height: 115px;
+    padding: 0;
+    padding-top: 11px;
+    &__logo {
+      margin-left: 20px;
+      width: 111px;
+    }
+    &__btn {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+    }
+    &__nav {
+      top: 72px;
+      bottom: auto;
+      flex-direction: column;
+      height: calc(100% - 72px);
+      z-index: 10;
+      padding: 50px 15px;
+      padding-top: 10px;
+      background-color: #202020;
+      transform: translateX(-101%);
+      transition: transform .3s;
+    }
+    &__li {
+      padding-top: 48px;
+    }
+    &__nav-cross {
+      position: absolute;
+      top: 15px;
+    }
+    &__burger {
+      display: block;
+      position: relative;
+      margin-bottom: -6px;
+      height: 45px;
+      background-color: #4a4a4a;
+    }
+    &__burger-btn {
+      border: none;
+      padding-top: 13px;
+      padding-left: 20px;
+    }
+    &__search-form {
+      height: 70px;
+      width: calc(100% - 30px);
+      top:0;
+    }
+    &__tel {
+      position: absolute;
+      bottom: 50px;
+      left: 20px;
+      display: inline;
+      font-style: 16px;
+      line-height: 21px;
+      color: $orangeColor;
+      background-image: url(../images/tel-orange.svg);
+      @include back;
+      padding-left: 20px;
+    }
+  }
+
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    &__descr {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__hash {
+      padding: 4px 7px;
+    }
+    &__semi-title {
+      margin-top: 4px;
+      margin-bottom: -14px;
+      font-size: 18px;
+    }
+  }
+
+  .about {
+    padding-top: 32px;
+    padding-bottom: 60px;
+
+    &__descr {
+      margin-top: -13px;
+      font-size: 14px;
+      line-height: 25px;
+    }
+    &__semi-title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__img {
+      height: 278px;
+    }
+  }
+
+  .project {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .proj {
+
+    &__descr, &__descr-back {
+      min-height: 0;
+    }
+    &__li-four {
+      background-image: url(../images/proj-back-320-1.jpg);
+    }
+    &__li-five {
+      background-image: url(../images/proj-back-320-2.jpg);
+    }
+    &__li-four, &__li-five {
+      padding-top: 196px;
+      padding-right: 32px;
+    }
+    &__descr-back {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__date {
+      padding-left: 15px;
+      font-size: 12px;
+      line-height: 22px;
+      background-size: 12px 11px;
+    }
+  }
+  .cont {
+    padding: 0;
+    padding-bottom: 50px;
+
+    &__title {
+      margin-left: 20px;
+    }
+
+    &__map-left {
+      padding: 26px 34px 14px 20px
+    }
+    &__map-title {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__map-descr {
+      margin-bottom: 13px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__map-tel {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__form {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    &__semi-title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__descr {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  .footer {
+    padding: 0;
+    position: relative;
+
+    &__left {
+      width: 100%;
+      height: 62px;
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-top: 9px;
+      text-align: center;
+      background: #4a4a4a;
+    }
+
+    &__right {
+      margin-left: calc(50% - 80px);
+    }
+
+    &__logo {
+      width: 111px;
+    }
+    &__logo-descr {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+  .small {
+    display: block;
+  }
+  .big {
+    display: none;
+  }
+  .menu-active {
+    transform: none;
+    transition: transform .3s;
+  }
+}

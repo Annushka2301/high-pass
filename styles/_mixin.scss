@@ -1,0 +1,17 @@
+@mixin descr {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin back {
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@mixin ellipsis {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

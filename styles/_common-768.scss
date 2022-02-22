@@ -1,0 +1,62 @@
+@media (max-width:900px) {
+  .header {
+    height: 125px;
+    padding: 0;
+    padding-top: 16px;
+    position: relative;
+
+    &__logo {
+      margin-left: 30px;
+    }
+
+    &__btn {
+      margin-right: 30px;
+    }
+
+    &__nav {
+      width: 100%;
+      height: 45px;
+      padding: 12px 30px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #4a4a4a;
+    }
+
+    &__search-form {
+      top: 25px;
+    }
+  }
+
+  .hero {
+    &__semi-title {
+      font-size: 22px;
+    }
+  }
+
+  .proj {
+    &__descr {
+      min-height: 66px;
+    }
+    &__ellips {
+      display: inline;
+      white-space: inherit;
+    }
+    &__ellipsis {
+      @include ellipsis;
+      width: 120px;
+      line-height: 10px;
+      display: inline-block;
+    }
+  }
+
+  .footer {
+    &__logo {
+      padding-top: 5px;
+    }
+    &__middle {
+      display: none;
+    }
+  }
+}
+

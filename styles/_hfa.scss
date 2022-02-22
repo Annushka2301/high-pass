@@ -1,0 +1,79 @@
+.header__link:hover
+ {
+  color: $orangeColor;
+}
+.header__link:focus:not(:active) {
+  background-color: $brownColor;
+}
+.header__link:active {
+  color: $activeColor;
+}
+.header__social-link:hover svg path,
+.footer__link:hover svg path {
+  fill: $orangeColor;
+}
+.header__social-link:focus:not(:hover) svg path,
+.footer__link:focus:not(:hover) svg path {
+  fill: $brownColor;
+}
+.header__social-link:active svg path,
+.footer__link:active svg path {
+  fill: $activeColor;
+}
+.btn:hover {
+  background: $orangeColor;
+}
+.btn:focus {
+  background: $brownColor;
+}
+.btn:active {
+  background: $activeColor;
+  border-color: $activeColor;
+}
+.hero__btn:hover,.cont__btn:hover, .about__btn:hover {
+  background: $brownColor;
+  border-color: $brownColor;
+}
+.hero__btn:focus,.cont__btn:focus, .about__btn:focus {
+  border-color: $activeColor;
+  background: $orangeColor;
+}
+.about__email:hover::-webkit-input-placeholder {color: $orangeColor;}
+.about__email:hover::-moz-placeholder          {color: $orangeColor;}
+.about__email:hover:-moz-placeholder           {color: $orangeColor;}
+.about__email:hover:-ms-input-placeholder      {color: $orangeColor;}
+.about__email:focus {outline: 1px solid $orangeColor;}
+.about__email:active::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.about__email:active::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.about__email:active:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.about__email:active:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.cont__input:hover::-webkit-input-placeholder {color: $orangeColor;}
+.cont__input:hover::-moz-placeholder          {color: $orangeColor;}
+.cont__input:hover:-moz-placeholder           {color: $orangeColor;}
+.cont__input:hover:-ms-input-placeholder      {color: $orangeColor;}
+.cont__input:focus {outline: 1px solid $orangeColor;}
+.cont__input:active::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.cont__input:active::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.cont__input:active:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.cont__input:active:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.header__search-input:hover {border-bottom:1px solid $orangeColor;}
+.header__search-input:hover {border-bottom:1px solid $orangeColor;}
+.header__search-input:hover {border-bottom:1px solid $orangeColor;}
+.header__search-input:hover {border-bottom:1px solid $orangeColor;}
+
+.header__search-input:focus {border-bottom:1px solid $brownColor;}
+.header__search-input:focus {border-bottom:1px solid $brownColor;}
+.header__search-input:focus {border-bottom:1px solid $brownColor;}
+.header__search-input:focus {border-bottom:1px solid $brownColor;}
+
+.header__search-input:active {border-bottom:1px solid $activeColor;}
+.header__search-input:active {border-bottom:1px solid $activeColor;}
+.header__search-input:active {border-bottom:1px solid $activeColor;}
+.header__search-input:active {border-bottom:1px solid $activeColor;}
+
+.header__search-input:active::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.header__search-input:active::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.header__search-input:active:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.header__search-input:active:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
