@@ -61,17 +61,13 @@ a, ul, li, p, h1, h2, h3, button {
   outline: none;
 }
 
-a, button {
-  cursor:pointer;
-}
-
 img {
   width: 100%;
   object-fit: cover;
 }
 
 input {
-  padding: 15.5px 0 15.5px 23px;
+  padding: 15px 0 15.5px 23px;
   font-size: 16px;
   line-height: 19px;
   border-radius: 0;
@@ -113,7 +109,7 @@ input {
   content: '';
   top: 7px;
   right: 7px;
-  padding: 7px 14px;
+  padding: 5px 12px;
   background: #333;
   color: $whiteColor;
 }
@@ -130,7 +126,8 @@ input {
   &__nav {
     display: flex;
     justify-content: space-between;
-    padding-right: 27px;
+    margin-left: -5px;
+    margin-right: -5px;
   }
 
   &__link {
@@ -196,6 +193,10 @@ input {
     background-color: #202020;
   }
 
+  &__search-form {
+    display: none;
+  }
+
 }
 
 .hero {
@@ -212,7 +213,7 @@ input {
   &__hash {
     top: 15px;
     right: 15px;
-    padding: 7px 15px;
+    padding: 5px 10px;
   }
 
   &__cont {
@@ -241,7 +242,7 @@ input {
   }
 
   &__semi-title {
-    margin-top: -5px;
+    margin-top: -6px;
     margin-bottom: -5px;
     line-height: 104%;
     font-weight: 700;
@@ -269,6 +270,7 @@ input {
 
   &__img {
     height: calc(100% - 110px);
+    margin-top: -5px;
     margin-bottom: 25px;
     background-image: url(../images/about.jpg);
     background-size: cover;
@@ -295,6 +297,7 @@ input {
   }
 
   &__btn {
+    padding-left: 18px;
     background: $orangeColor;
   }
 
@@ -303,7 +306,7 @@ input {
 
 
 .project {
-  padding-top: 68px;
+  padding-top: 66px;
 
   &__title {
     margin-bottom: 12px;
@@ -331,7 +334,7 @@ input {
   }
 
   &__descr {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
     @include descr;
   }
@@ -340,6 +343,7 @@ input {
     @include ellipsis;
   }
   &__date {
+    font-size: 12px;
     padding-left: 17px;
     @include back;
   }
@@ -355,11 +359,11 @@ input {
   }
 
   &__li-four, &__li-five {
-    padding: 22px 0 30px 30px;
+    padding: 24px 0 30px 30px;
   }
 
   &__li-title {
-    max-width: 292px;
+    max-width: 274px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: 700;
@@ -370,17 +374,25 @@ input {
 
   &__descr-back {
     max-width: 292px;
-    min-height: 129px;
     @include descr;
     margin-top: 0;
-    margin-bottom: 16px;
     color: $whiteColor;
+  }
+
+  &__wrap {
+    margin-bottom: 16px;
+    min-height: 156px;
+  }
+
+  &__btn {
+    padding-right: 20px;
   }
 }
 
 
 .cont {
-  padding: 68px 30px;
+  padding: 70px 30px;
+  padding-bottom: 68px;
 
   &__map-left {
     position: relative;
@@ -405,7 +417,7 @@ input {
   }
 
   &__map-descr {
-    margin-bottom: 3px;
+    margin-bottom: 2px;
     @include descr;
     line-height: 28px;
     color: #CACACA;
@@ -433,6 +445,7 @@ input {
     font-size: 24px;
     line-height: 22px;
     margin-bottom: 5px;
+    margin-top: -8px;
   }
 
   &__descr {
@@ -443,17 +456,18 @@ input {
 
   &__input {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     background-color: #e9e9e9;
   }
 
   &__input-com {
     height: 150px;
-    padding-bottom: 110px;
+    padding-bottom: 120px;
   }
 
   &__btn {
     background-color: $orangeColor;
+    padding-right: 20px;
   }
 }
 
@@ -462,11 +476,10 @@ input {
 .footer {
   display: flex;
   align-items: start;
-  justify-content: space-between;
-  padding: 24px 30px 16px;
+  padding: 26px 30px 16px;
 
   &__left {
-    width: 33%;
+    width: 34%;
   }
 
   &__logo {
@@ -480,12 +493,11 @@ input {
   }
 
   &__middle {
-    width: 33%;
+    width: 53%;
   }
 
   &__descr {
-    margin-bottom: 5px;
-    font-style: 16px;
+    font-size: 16px;
     line-height: 22px;
     color: #E9E9E9;
   }
@@ -497,6 +509,7 @@ input {
 
   &__right {
     width: 161px;
+    justify-self: end;
   }
 
   &__right-descr {

@@ -25,7 +25,7 @@
 .hero {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: auto 300px 257px;
   gap: 30px;
 
   &__left {
@@ -116,7 +116,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
-  gap: 22px 30px;
+  gap: 24px 30px;
 
   &__title {
     grid-column: 1/ span 12;
@@ -160,6 +160,10 @@
     }
   }
 
+  .hero {
+    grid-template-rows: auto 332px 186px;
+  }
+
   .proj {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3 , auto);
@@ -197,7 +201,7 @@
 
   .cont {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto 288px 157px;
+    grid-template-rows: auto 282px 157px;
     gap: 22px 30px;
 
     &__title {
@@ -244,6 +248,9 @@
       justify-self: end;
     }
   }
+  .hero {
+    grid-template-rows: auto 228px 133px;
+  }
 }
 
 @media (max-width:768px) {
@@ -251,6 +258,7 @@
   .proj {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2 , 1fr);
+    gap: 22px 30px;
 
     &__li-one  {
       grid-column: 1/ span 2;
@@ -284,7 +292,7 @@
 
   .cont {
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto 288px auto auto;
+    grid-template-rows: auto 280px auto auto;
     gap: 23px 30px;
 
     &__title {
@@ -332,7 +340,7 @@
   }
   .hero {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 422px repeat(3, auto);
+    grid-template-rows: 422px auto 186px 105px;
 
     &__left {
       grid-column: 1/ span 2;
@@ -421,7 +429,7 @@
   .footer {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 123px 65px;
+    grid-template-rows: 120px 65px;
     gap: 0;
     align-items: center;
     justify-content: space-around;
